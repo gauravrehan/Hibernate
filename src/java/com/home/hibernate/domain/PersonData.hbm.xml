@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.home.hibernate.domain">
+
+    <class name="PersonData" table="cis_ms_personnel">
+        <id name="id" type="int" column="personnel_id">
+            <generator class="native"/>
+        </id>
+        <property name="firstName" type="string" column="first_name" />
+        <property name="lastName" type="string" column="last_name" />
+        <property name="mailId" type="string" column="mail_id" />
+        <property name="active" type="int" column="active"/>
+        
+    </class>
+
+</hibernate-mapping>
